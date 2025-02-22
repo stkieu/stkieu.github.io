@@ -75,6 +75,13 @@ body {
     }
   }
 
+  .offcanvas {
+    height: 100vh !important; 
+    max-height: 100vh !important;
+    overflow-y: auto !important; 
+    z-index: 1051 !important; 
+  }
+  
   a {
     padding: 0 20px;
     margin: 0;
