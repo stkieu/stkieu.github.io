@@ -85,7 +85,7 @@
         <div class="row">
           <figure class="col-sm-4">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+              src="java.png"
               style="width: 100px; height: 100px; object-fit: cover;"
               alt="java logo"
             />
@@ -132,27 +132,38 @@
       <section class="container" id="Past Experience">
         <h2>Past Experience</h2>
         <div class="container">
-          <ul>
+          <ul class="list-unstyled">
             <li>
-              <strong>Mary Birch Hospital for Women and Newborns Volunteer (January 2019-April 2020)</strong> 
-              <div class="description">
-                Assisted lactation consultants in supporting new mothers, including facilitating education on infant nutrition and addressing related concerns. Observed and learned from consultations to understand effective practices in providing support.
-                Assisted in maintaining accurate records of patient interactions
-                Developed strong communication and interpersonal skills by interacting with diverse patients and healthcare professionals.
-              </div>
+              <div class="card my-4">
+                <div class="card-body">
+                  <strong class="card-title">Mary Birch Hospital for Women and Newborns Volunteer (January 2019-April 2020)</strong> 
+                  <p class="card-text">
+                    Assisted lactation consultants in supporting new mothers, including facilitating education on infant nutrition and addressing related concerns. Observed and learned from consultations to understand effective practices in providing support.
+                    Assisted in maintaining accurate records of patient interactions
+                    Developed strong communication and interpersonal skills by interacting with diverse patients and healthcare professionals.
+                  </p>
+                </div>                
+              </div>              
             </li>
-
+           
             <li>
-                <strong>Schroeder Laboratory Intern (August 2019 - January 2020)</strong> 
-                <div class="description">
-                    In this project, we aimed to select, grow, and screen mutant candidates of Arabidopsis thaliana that exhibit the "hot" phenotype. We began by autoclaving the soil and sterilizing the seeds to ensure a controlled environment. Seeds were initially sown in a petri dish, and once mature seedlings developed, they were carefully transplanted into pots for further growth. To assess the phenotypic variations, we analyzed and compared the stomata and pavement cells of both stagnant and mutant plants using infrared cameras. This approach allowed us to gather detailed data on the physiological differences between the two groups, enhancing our understanding of the traits associated with the "hot" phenotype in Arabidopsis thaliana.
+              <div class="card my-4">
+                <div class="card-body">
+                  <strong class="card-title">Schroeder Laboratory Intern (August 2019 - January 2020)</strong> 
+                  <p class="card-text">
+                      In this project, we aimed to select, grow, and screen mutant candidates of Arabidopsis thaliana that exhibit the "hot" phenotype. We began by autoclaving the soil and sterilizing the seeds to ensure a controlled environment. Seeds were initially sown in a petri dish, and once mature seedlings developed, they were carefully transplanted into pots for further growth. To assess the phenotypic variations, we analyzed and compared the stomata and pavement cells of both stagnant and mutant plants using infrared cameras. This approach allowed us to gather detailed data on the physiological differences between the two groups, enhancing our understanding of the traits associated with the "hot" phenotype in Arabidopsis thaliana.
+                  </div>
                 </div>
             </li>
-            <li>
-                <strong>Fricovsky Laboratory Intern (June-August 2018)</strong> 
-                <div class="description">
+             <li>
+              <div class="card my-4">
+                <div class="card-body">
+                  <strong class="card-title">Fricovsky Laboratory Intern (June-August 2018)</strong> 
+                  <p class="card-text">
                     The process of glycolysis provides a continuous energy source for cancer cells, fueling their growth and proliferation. The aim of this study was to identify an inhibitor that could effectively disrupt glycolysis, thereby stifling the growth of cancer cells by targeting the key regulatory enzyme, phosphofructokinase-1 (PFK-1). Sulforaphane, a naturally occurring compound found in cruciferous vegetables like broccoli, cabbage, and kale, was investigated for its potential as an inhibitor. As an organic isothiocyanate, sulforaphane has been documented to inhibit PFK-1 activity, which is crucial for energy production in cancer cells. Our results demonstrated that 0.15 mM sulforaphane effectively inhibited PFK-1 activity by 50%, providing promising evidence for its role in potentially controlling glycolysis and, consequently, cancer cell growth.
+                  </p>
                 </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -160,37 +171,45 @@
       <section class="container" id="Projects">
         <h2>Projects</h2>
         <div class="container">
-            <ul>
+            <ul class="list-unstyled">
                 <li>
-                  <a href="https://github.com/stkieu/Tea-Stock">
-                    <strong>Matcha Watch</strong>
-                  </a>
+                  <div class="card my-4">
+                    <div class="card-body">
+                      <a class="card-title" href="https://github.com/stkieu/Tea-Stock">
+                        <strong style="color:#007bff ;">Matcha Watch</strong>
+                      </a>
+                    <p class="card-text mt-3 mx-3">
+                        Recently, Marukyu Koyamaen Matcha has gone viral on TikTok and has sold out on every single restock since June. In order to get to the restocks on time, I created this stock tracker of their principal matchas. In order to create this tracker, I webscraped the website using BeautifulSoup 4/ python. This data is stored in an AWS DynamoDB database and is regularly updated through a scheduled EventBridge trigger, which invokes a Lambda function. The stock status is then made accessible via a REST API exposed through API Gateway, which calls another Lambda function to query the database. The front end of the tracker is built using HTML, CSS, and Bootstrap 4, and JavaScript fetches the stock data from the API and displays it. Additionally, when any stock status is detected to have changed from out of stock to in stock, a discord bot is triggered to ping a notification in a designated discord channel with the product ID and URL.
+                    </p>
+                    <img class="img-fluid card-img-bottom" src="Screenshot.png" alt="Discord Notify" >
                 </li>
-                <div class="description">
-                    Recently, Marukyu Koyamaen Matcha has gone viral on TikTok and has sold out on every single restock since June. In order to get to the restocks on time, I created this stock tracker of their principal matchas. In order to create this tracker, I webscraped the website using BeautifulSoup 4/ python. This data is stored in an AWS DynamoDB database and is regularly updated through a scheduled EventBridge trigger, which invokes a Lambda function. The stock status is then made accessible via a REST API exposed through API Gateway, which calls another Lambda function to query the database. The front end of the tracker is built using HTML, CSS, and Bootstrap 4, and JavaScript fetches the stock data from the API and displays it. Additionally, when any stock status is detected to have changed from out of stock to in stock, a discord bot is triggered to ping a notification in a designated discord channel with the product ID and URL.
-                </div>
-                <img src="Screenshot.png" alt="Discord Notify" width="500">
                 <li>
-                  <a href="https://github.com/CSE-110-Winter-2024/project-team-15">
-                    <strong>Success List App(Android-Java)</strong>
-                  </a>
-                </li>
-                <div class="description">
-                    Over a 10-week period, I collaborated with a team of six to develop a task management application using agile development methodologies. We implemented key features such as contextual tagging for task organization (Home, Work, School, Errands) and a Focus Mode interface to enhance user concentration. To achieve data persistence, we utilized a SQL database, enabling efficient storage and retrieval of user tasks, which ensured that data remained consistent and accessible across sessions. I also designed intuitive UI elements like dropdown menus, date pickers, and options for recurring tasks to improve user interaction. Throughout the project, we employed technologies and principles including XML, Java, Behavior-Driven Development (BDD), unit testing, and continuous integration, while adhering to object-oriented design principles and various design patterns to ensure a robust and maintainable codebase.
-                </div>
-    
-                <div class="row">
-                    <div class="col-sm-6">
-                        <iframe class="embed-responsive-item" src="https://1drv.ms/w/s!ArAuHP2QVi13ge8NX3W14h6zI1_V3Q?embed=1&amp;em=2" width="476px" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                  <div class="card my-4">
+                    <div class="card-body">
+                      <a class="card-title" href="https://github.com/CSE-110-Winter-2024/project-team-15">
+                        <strong style="color:#007bff ;">Success List App(Android-Java)</strong>
+                      </a>
+                    <p class="card-text mt-3 mx-3">
+                        Over a 10-week period, I collaborated with a team of six to develop a task management application using agile development methodologies. We implemented key features such as contextual tagging for task organization (Home, Work, School, Errands) and a Focus Mode interface to enhance user concentration. To achieve data persistence, we utilized a SQL database, enabling efficient storage and retrieval of user tasks, which ensured that data remained consistent and accessible across sessions. I also designed intuitive UI elements like dropdown menus, date pickers, and options for recurring tasks to improve user interaction. Throughout the project, we employed technologies and principles including XML, Java, Behavior-Driven Development (BDD), unit testing, and continuous integration, while adhering to object-oriented design principles and various design patterns to ensure a robust and maintainable codebase.
+                    </p>
+                    <div class="row">
+                      <div class="col-lg-6">
+                          <iframe class="embed-responsive-item" src="https://1drv.ms/w/s!ArAuHP2QVi13ge8NX3W14h6zI1_V3Q?embed=1&amp;em=2" width="400px" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+                      </div>
+                      <div class="col-lg-6">
+                        <iframe class="embed-responsive-item" src="https://1drv.ms/w/s!ArAuHP2QVi13ge8OVdUZTaYOYsGhVA?embed=1&amp;em=2" width="400px" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>                    </div>
                     </div>
-                    <div class="col-sm-6">
-                      <iframe class="embed-responsive-item" src="https://1drv.ms/w/s!ArAuHP2QVi13ge8OVdUZTaYOYsGhVA?embed=1&amp;em=2" width="476px" height="600px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>                    </div>
-                </div>
-                
-                <li><strong>Personal Website</strong></li>
-                <div class="description">
-                    This project was to create a personal portfolio website to showcase my skills, background, and projects using HTML, CSS, and Bootstrap 4, and hosted by GitHub.
-                </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card my-4">
+                      <div class="card-body">
+                        <strong class="card-title">Personal Website</strong>
+                      <div class="card-text mt-3 mx-3">
+                          This project was to create a personal portfolio website to showcase my skills, background, and projects using HTML, CSS, and Bootstrap 4, and hosted by GitHub.
+                      </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
